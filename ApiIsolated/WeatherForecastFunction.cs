@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Net;
-using BlazorApp.Shared;
+using K8simon.Shared;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
@@ -38,19 +38,19 @@ namespace ApiIsolated
 
         private string GetSummary(int temp)
         {
-            var summary = "Mild";
+            var summary = "Quite Mild";
 
             if (temp >= 32)
             {
-                summary = "Hot";
+                summary = "Super Hot";
             }
             else if (temp <= 16 && temp > 0)
             {
-                summary = "Cold";
+                summary = "Hmm Cold";
             }
             else if (temp <= 0)
             {
-                summary = "Freezing";
+                summary = "Absolutely Freezing";
             }
 
             return summary;

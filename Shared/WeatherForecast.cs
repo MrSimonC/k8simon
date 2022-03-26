@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BlazorApp.Shared
+namespace K8simon.Shared
 {
     public class WeatherForecast
     {
