@@ -700,3 +700,15 @@
     </div> <!-- end s-footer__bottom -->
 
 </footer> <!-- end s-footer -->
+
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await jsRuntime.InvokeVoidAsync("simonFunctions.setBodyClass", "top");
+        await jsRuntime.InvokeVoidAsync("simonFunctions.loadScript", "js/main.js");
+        //await jsRuntime.InvokeVoidAsync("simonFunctions.pageLoadAnimation", null);
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+}
