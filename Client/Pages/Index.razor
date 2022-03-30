@@ -3,9 +3,9 @@
 
 <!-- preloader
 ================================================== -->
-<div id="preloader">
+@*<div id="preloader">
     <div id="loader"></div>
-</div>
+</div>*@
 
 
 <!-- header
@@ -245,7 +245,7 @@
                     </blockquote>
                 </div>
     
-            </article> end article
+            </article> <!-- end article -->
  
             <article class="brick entry format-standard animate-this">
  
@@ -707,7 +707,7 @@
     {
         await jsRuntime.InvokeVoidAsync("simonFunctions.setBodyClass", "top");
         await jsRuntime.InvokeVoidAsync("simonFunctions.loadScript", "js/main.js");
-        //await jsRuntime.InvokeVoidAsync("simonFunctions.pageLoadAnimation", null);
+        //await jsRuntime.InvokeVoidAsync("simonFunctions.fireTransitionEnd", null);
 
         await base.OnAfterRenderAsync(firstRender);
     }
