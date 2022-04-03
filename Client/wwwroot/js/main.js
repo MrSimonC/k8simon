@@ -15,31 +15,31 @@
 
    /* preloader
     * -------------------------------------------------- */
-    //const ssPreloader = function() {
+    const ssPreloader = function() {
 
-    //    const preloader = document.querySelector('#preloader');
-    //    if (!preloader) return;
+       const preloader = document.querySelector('#preloader');
+       if (!preloader) return;
 
-    //    document.querySelector('html').classList.add('ss-preload');
+       document.querySelector('html').classList.add('ss-preload');
         
-    //    window.addEventListener('load', function() {
+       window.addEventListener('load', function() {
             
-    //        document.querySelector('html').classList.remove('ss-preload');
-    //        document.querySelector('html').classList.add('ss-loaded');
+           document.querySelector('html').classList.remove('ss-preload');
+           document.querySelector('html').classList.add('ss-loaded');
 
-    //        preloader.addEventListener('transitionend', function(e) {
-    //            if (e.target.matches("#preloader")) {
-    //                this.style.display = 'none';
-    //            }
-    //        });
-    //    });
+           preloader.addEventListener('transitionend', function(e) {
+               if (e.target.matches("#preloader")) {
+                   this.style.display = 'none';
+               }
+           });
+       });
 
-    //    // force page scroll position to top at page refresh
-    //    // window.addEventListener('beforeunload' , function () {
-    //    //     window.scrollTo(0, 0);
-    //    // });
+       // force page scroll position to top at page refresh
+       // window.addEventListener('beforeunload' , function () {
+       //     window.scrollTo(0, 0);
+       // });
 
-    //}; // end ssPreloader
+    }; // end ssPreloader
 
 
 
@@ -352,7 +352,7 @@
     * ------------------------------------------------------ */
     (function ssInit() {
 
-        //ssPreloader();
+        ssPreloader();
         ssAlertBoxes();
         ssSearch();
         ssMobileMenu();
@@ -363,6 +363,9 @@
         ssAjaxChimp();
         ssBackToTop();
 
+        // manually trigger "we've loaded" as Blazor doesn't trigger it
+        var loadEvent = new Event('load');
+        window.dispatchEvent(loadEvent);
     })();
 
 })(jQuery);
