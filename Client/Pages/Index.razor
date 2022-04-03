@@ -10,7 +10,7 @@
 
 <!-- header
 ================================================== -->
-<Header.razor /> <!-- end header -->
+<Header /> <!-- end header -->
 
 
 <!-- masonry
@@ -658,10 +658,7 @@
 @code {
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await jsRuntime.InvokeVoidAsync("simonFunctions.setBodyClass", "top");
         await jsRuntime.InvokeVoidAsync("simonFunctions.loadScript", "js/main.js");
-        //await jsRuntime.InvokeVoidAsync("simonFunctions.fireTransitionEnd", null);
-
         await base.OnAfterRenderAsync(firstRender);
     }
 }
