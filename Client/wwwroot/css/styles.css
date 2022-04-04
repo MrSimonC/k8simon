@@ -3804,11 +3804,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     background: transparent;
 }
 
-.s-header__nav li.current>a {
+.s-header__nav li a.active{
     color: black;
 }
 
-.s-header__nav li.current>a::before {
+.s-header__nav li a.active::before {
     content: "";
     display: block;
     height: 2px;
@@ -4161,7 +4161,7 @@ body.search-is-visible {
     .s-header__nav li ul li a {
         padding: .8rem 1.6rem .8rem;
     }
-    .s-header__nav li.current a::before {
+    .s-header__nav li  a.active::before {
         display: none;
     }
     .s-header__nav>li {
