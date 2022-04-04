@@ -74,6 +74,7 @@
 
         const $navWrap = $('.s-header__nav-wrap');
         const $closeNavWrap = $navWrap.find('.s-header__overlay-close');
+        const $simonCloseOnAnyMenuItem = $navWrap.find('.s-header__nav');
         const $menuToggle = $('.s-header__toggle-menu');
         const $siteBody = $('body');
         
@@ -111,6 +112,15 @@
                     .next('ul')
                     .slideUp(200);
 
+            }
+        });
+
+        // Blazor doesn't navigate with a page refresh, so we need to manually remove the menu overlay
+        $simonCloseOnAnyMenuItem.on('click', function(e) {
+            e.stopPropagation();
+        
+            if($siteBody.hasClass('nav-wrap-is-visible')) {
+                $siteBody.removeClass('nav-wrap-is-visible');
             }
         });
 
