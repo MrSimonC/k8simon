@@ -1,0 +1,15 @@
+{
+  "name": "k8simon",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "ev-emitter": "^2.1.2",
+    "gridsome": "^0.7.0",
+    "jquery-bridget": "^3.0.1",
+    "masonry-layout": "^4.2.2"
+  }
+}
