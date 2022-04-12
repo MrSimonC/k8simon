@@ -2967,8 +2967,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ## animation stuff 
  * ------------------------------------------------------------------- */
 .animate-this {
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
 }
 
 .no-js .animate-this, .no-cssanimations .animate-this {
