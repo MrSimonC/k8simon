@@ -551,7 +551,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Welcome to k8simon.com'
   }
 }
 </script>

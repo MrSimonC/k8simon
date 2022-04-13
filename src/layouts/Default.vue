@@ -18,7 +18,7 @@
                 <ul class="s-header__nav">
                     <!-- <li class="current"><a href="index.html" title="">Home</a></li> -->
                     <li><g-link to="/">Home</g-link></li>
-                    <li><g-link to="/about/">About us</g-link></li>
+                    <li><g-link to="/about/">About</g-link></li>
                 </ul> <!-- end header__nav -->
 
                 <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
