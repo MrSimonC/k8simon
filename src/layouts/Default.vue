@@ -96,7 +96,7 @@
 
                 </div> <!-- end s-footer__social links --> 
 
-                <div class="column large-4 medium-12 s-footer__subscribe">
+                <!-- <div class="column large-4 medium-12 s-footer__subscribe">
 
                     <h5>Subscribe</h5>
 
@@ -116,7 +116,7 @@
 
                     </div>
 
-                </div> <!-- end s-footer__subscribe -->
+                </div> -->
 
             </div> <!-- end row -->
 
