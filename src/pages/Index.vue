@@ -745,6 +745,7 @@ export default {
         const $closeNavWrap = $navWrap.find('.s-header__overlay-close');
         const $menuToggle = $('.s-header__toggle-menu');
         const $siteBody = $('body');
+        const $simonCloseOnAnyMenuItem = $navWrap.find('.s-header__nav');
         
         $menuToggle.on('click', function(e) {
             e.preventDefault();
@@ -779,7 +780,15 @@ export default {
                     .removeClass('sub-menu-is-open')
                     .next('ul')
                     .slideUp(200);
+            }
+        });
 
+        // gridsome doesn't navigate with a page refresh, so we need to manually remove the menu overlay
+        $simonCloseOnAnyMenuItem.on('click', function(e) {
+            e.stopPropagation();
+        
+            if($siteBody.hasClass('nav-wrap-is-visible')) {
+                $siteBody.removeClass('nav-wrap-is-visible');
             }
         });
 
@@ -862,6 +871,7 @@ export default {
    /* animate bricks
     * ------------------------------------------------------ */
     const ssBricksAnimate = function() {
+        console.log('simon bricks animate')
 
         const animateEl = document.querySelectorAll('.animate-this');
         if (!animateEl) return;
@@ -1001,7 +1011,7 @@ export default {
         ssSearch();
         ssMobileMenu();
         ssMasonry();
-        ssBricksAnimate();
+        //ssBricksAnimate();
         ssSlickSlider();
         ssSmoothScroll();
         ssBackToTop();
