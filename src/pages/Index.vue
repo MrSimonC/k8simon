@@ -17,7 +17,6 @@
                             
                             <div class="featured-post-slide">
                                 <div class="f-slide">
-                                    <p>hi simundo</p>
                                     <div class="f-slide__background" style="background-image:url('images/thumbs/featured/featured-1.jpg');"></div>
                                     <div class="f-slide__overlay"></div>
 
