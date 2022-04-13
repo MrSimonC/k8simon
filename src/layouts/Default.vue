@@ -49,7 +49,8 @@
 
     </header> <!-- end header -->
     <slot/>
-     <!-- footer
+
+    <!-- footer
     ================================================== -->
     <footer class="s-footer">
 
@@ -59,10 +60,10 @@
 
                 <div class="column large-4 medium-6 tab-12 s-footer__info">
 
-                    <h5>About Our Site</h5>
+                    <h5>About K8Simon</h5>
 
                     <p>
-                    Lorem ipsum Ut velit dolor Ut labore id fugiat in ut fugiat nostrud qui in dolore commodo eu magna Duis cillum dolor officia esse mollit proident Excepteur exercitation nulla. Lorem ipsum In reprehenderit commodo aliqua irure labore.
+                    All about kubernetes. This site uses the amazing Azure Static Web apps (free hosting, free SSL), an adapted HTML5 theme and Microsoft's Blazor Web Assembly. Pull up a chair, hang out a while.
                     </p>
 
                 </div> <!-- end s-footer__info -->
@@ -125,9 +126,8 @@
             <div class="row">
                 <div class="column">
                     <div class="ss-copyright">
-                        <span>© Copyright Simon Crouch 2022</span> 
-                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-                        <a href="https://www.flaticon.com/free-icons/helm" title="helm icons">Helm icons created by Freepik - Flaticon</a>
+                        <span>© Simon C 2022</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>		         	
                     </div> <!-- end ss-copyright -->
                 </div>
             </div> 
@@ -138,8 +138,7 @@
                 </a>
             </div> <!-- end ss-go-top -->
         </div> <!-- end s-footer__bottom -->
-
-   </footer> <!-- end s-footer -->
+   </footer>   
   </div>
 </template>
 

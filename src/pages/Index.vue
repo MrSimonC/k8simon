@@ -544,12 +544,7 @@
                 </nav> <!-- end pgn -->
             </div> <!-- end column -->
         </div> <!-- end row -->
-
     </section> <!-- end s-bricks -->
-
-
-   
-
   </Layout>
 </template>
 
