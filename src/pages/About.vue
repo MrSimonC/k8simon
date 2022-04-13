@@ -7,8 +7,9 @@
                 <section>
 
                     <div class="s-content__media">
-                        <g-image src="~/../static/images/thumbs/about/about-1050.jpg" />
+                        <g-image src="~/../static/images/thumbs/about/silhouette_man.jpg" />
                     </div> <!-- end s-content__media -->
+                    <p><small>Photo by <a href="https://unsplash.com/@benjaminsweet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben Sweet</a> on <a href="https://unsplash.com/s/photos/silhouette-man?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></small></p>
 
                     <div class="s-content__primary">
 
@@ -49,10 +50,10 @@
                     </div> <!-- end s-content__primary -->
 
                 </section>
-
             </div> <!-- end column -->
         </div> <!-- end row -->
     </section> <!-- end s-content -->
+
   </Layout>
 </template>
 
