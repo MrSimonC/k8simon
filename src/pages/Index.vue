@@ -1,10 +1,6 @@
 <template>
   <Layout>
    
-
-    
-
-
     <!-- masonry
     ================================================== -->
     <section class="s-bricks">
@@ -553,97 +549,7 @@
     </section> <!-- end s-bricks -->
 
 
-    <!-- footer
-    ================================================== -->
-    <footer class="s-footer">
-
-        <div class="s-footer__main">
-
-            <div class="row">
-
-                <div class="column large-4 medium-6 tab-12 s-footer__info">
-
-                    <h5>About Our Site</h5>
-
-                    <p>
-                    Lorem ipsum Ut velit dolor Ut labore id fugiat in ut fugiat nostrud qui in dolore commodo eu magna Duis cillum dolor officia esse mollit proident Excepteur exercitation nulla. Lorem ipsum In reprehenderit commodo aliqua irure labore.
-                    </p>
-
-                </div> <!-- end s-footer__info -->
-
-                <div class="column large-2 medium-3 tab-6 s-footer__site-links">
-
-                    <h5>Site Links</h5>
-
-                    <ul>
-                        <li><a href="#0">About Us</a></li>
-                        <li><a href="#0">Blog</a></li>
-                        <li><a href="#0">FAQ</a></li>
-                        <li><a href="#0">Terms</a></li>
-                        <li><a href="#0">Privacy Policy</a></li>
-                    </ul>
-
-                </div> <!-- end s-footer__site-links -->  
-
-                <div class="column large-2 medium-3 tab-6 s-footer__social-links">
-
-                    <h5>Social</h5>
-
-                    <ul>
-                        <li><a href="#0">Twitter</a></li>
-                        <li><a href="#0">Facebook</a></li>
-                        <li><a href="#0">Dribbble</a></li>
-                        <li><a href="#0">Pinterest</a></li>
-                        <li><a href="#0">Instagram</a></li>
-                    </ul>
-
-                </div> <!-- end s-footer__social links --> 
-
-                <div class="column large-4 medium-12 s-footer__subscribe">
-
-                    <h5>Subscribe</h5>
-
-                    <p>Keep yourself updated. Subscribe to our newsletter.</p>
-
-                    <div class="subscribe-form">
-                
-                        <form id="mc-form" class="group" novalidate="true">
-
-                            <input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="Type &amp; press enter" required=""> 
-                
-                            <input type="submit" name="subscribe" >
-                
-                            <label for="mc-email" class="subscribe-message"></label>
-                
-                        </form>
-
-                    </div>
-
-                </div> <!-- end s-footer__subscribe -->
-
-            </div> <!-- end row -->
-
-        </div> <!-- end s-footer__main -->
-
-        <div class="s-footer__bottom">
-            <div class="row">
-                <div class="column">
-                    <div class="ss-copyright">
-                        <span>© Copyright Simon Crouch 2022</span> 
-                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-                        <a href="https://www.flaticon.com/free-icons/helm" title="helm icons">Helm icons created by Freepik - Flaticon</a>
-                    </div> <!-- end ss-copyright -->
-                </div>
-            </div> 
-
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
-                </a>
-            </div> <!-- end ss-go-top -->
-        </div> <!-- end s-footer__bottom -->
-
-   </footer> <!-- end s-footer -->
+   
 
   </Layout>
 </template>
@@ -699,330 +605,315 @@ export default {
 
 
     /* ===================================================================
- * Abstract 2.0.0 - Main JS
- *
- * ------------------------------------------------------------------- */ 
+    * Abstract 2.0.0 - Main JS
+    *
+    * ------------------------------------------------------------------- */ 
 
-(function($) {
+    (function($) {
 
-    "use strict";
+        "use strict";
 
-    const cfg = {
-        scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc' // MailChimp URL
-    }
+        const cfg = {
+            scrollDuration : 800, // smoothscroll duration
+            mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc' // MailChimp URL
+        }
 
-   /* alert boxes
-    * ------------------------------------------------------ */
-    const ssAlertBoxes = function() {
+    /* alert boxes
+        * ------------------------------------------------------ */
+        const ssAlertBoxes = function() {
 
-        const boxes = document.querySelectorAll('.alert-box');
-        if (!boxes) return;
+            const boxes = document.querySelectorAll('.alert-box');
+            if (!boxes) return;
 
-        boxes.forEach(function(box) {
+            boxes.forEach(function(box) {
 
-            box.addEventListener('click', function(e){
-                if (e.target.matches(".alert-box__close")) {
-                    e.stopPropagation();
-                    e.target.parentElement.classList.add("hideit");
+                box.addEventListener('click', function(e){
+                    if (e.target.matches(".alert-box__close")) {
+                        e.stopPropagation();
+                        e.target.parentElement.classList.add("hideit");
 
-                    setTimeout(function() {
-                        box.style.display = "none";
-                    }, 500)
-                }    
-            });
-
-        })
-
-    }; // end ssAlertBoxes
-
-
-   /* Mobile Menu
-    * ---------------------------------------------------- */ 
-    const ssMobileMenu = function() {
-
-        const $navWrap = $('.s-header__nav-wrap');
-        const $closeNavWrap = $navWrap.find('.s-header__overlay-close');
-        const $menuToggle = $('.s-header__toggle-menu');
-        const $siteBody = $('body');
-        const $simonCloseOnAnyMenuItem = $navWrap.find('.s-header__nav');
-        
-        $menuToggle.on('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            $siteBody.addClass('nav-wrap-is-visible');
-        });
-
-        $closeNavWrap.on('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-        
-            if($siteBody.hasClass('nav-wrap-is-visible')) {
-                $siteBody.removeClass('nav-wrap-is-visible');
-            }
-        });
-
-        // open (or close) submenu items in mobile view menu. 
-        // close all the other open submenu items.
-        $('.s-header__nav .has-children').children('a').on('click', function (e) {
-            e.preventDefault();
-
-            if ($(".close-mobile-menu").is(":visible") == true) {
-
-                $(this).toggleClass('sub-menu-is-open')
-                    .next('ul')
-                    .slideToggle(200)
-                    .end()
-                    .parent('.has-children')
-                    .siblings('.has-children')
-                    .children('a')
-                    .removeClass('sub-menu-is-open')
-                    .next('ul')
-                    .slideUp(200);
-            }
-        });
-
-        // gridsome doesn't navigate with a page refresh, so we need to manually remove the menu overlay
-        $simonCloseOnAnyMenuItem.on('click', function(e) {
-            e.stopPropagation();
-        
-            if($siteBody.hasClass('nav-wrap-is-visible')) {
-                $siteBody.removeClass('nav-wrap-is-visible');
-            }
-        });
-
-    }; // end ssMobileMenu
-
-
-   /* search
-    * ------------------------------------------------------ */
-    const ssSearch = function() {
-
-        const searchWrap = document.querySelector('.s-header__search');
-        const searchTrigger = document.querySelector('.s-header__search-trigger');
-
-        if (!(searchWrap && searchTrigger)) return;
-
-        const searchField = searchWrap.querySelector('.s-header__search-field');
-        const closeSearch = searchWrap.querySelector('.s-header__overlay-close');
-        const siteBody = document.querySelector('body');
-
-        searchTrigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            siteBody.classList.add('search-is-visible');
-            setTimeout(function(){
-                searchWrap.querySelector('.s-header__search-field').focus();
-            }, 100);
-        });
-
-        closeSearch.addEventListener('click', function(e) {
-            e.stopPropagation();
-
-            if(siteBody.classList.contains('search-is-visible')) {
-                siteBody.classList.remove('search-is-visible');
-                setTimeout(function(){
-                    searchWrap.querySelector('.s-header__search-field').blur();
-                }, 100);
-            }
-        });
-
-        searchWrap.addEventListener('click', function(e) {
-            if( !(e.target.matches('.s-header__search-field')) ) {
-                closeSearch.dispatchEvent(new Event('click'));
-            }
-        });
-
-        searchField.addEventListener('click', function(e) {
-            e.stopPropagation();
-        })
-
-        searchField.setAttribute('placeholder', 'Type Keywords');
-        searchField.setAttribute('autocomplete', 'off');
-
-    }; // end ssSearch
-
-
-   /* masonry
-    * ------------------------------------------------------ */
-    const ssMasonry = function() {
-      console.log('simon ssMasonry start')
-        const containerBricks = document.querySelector('.bricks-wrapper');
-        if (!containerBricks) return;
-      console.log('simon ssMasonry middle')
-
-        imagesLoaded(containerBricks, function() {
-
-            const msnry = new Masonry(containerBricks, {
-                itemSelector: '.entry',
-                columnWidth: '.grid-sizer',
-                percentPosition: true,
-                resize: true
-            });
-
-        });
-      console.log('simon ssMasonry end')
-
-    }; // end ssMasonry
-
-
-   /* animate bricks
-    * ------------------------------------------------------ */
-    const ssBricksAnimate = function() {
-        console.log('simon bricks animate')
-
-        const animateEl = document.querySelectorAll('.animate-this');
-        if (!animateEl) return;
-
-        window.addEventListener('load', function() {
-
-            setTimeout(function() {
-                animateEl.forEach(function(item, ctr) {
-                    let el = item;
-                        
-                    setTimeout(function() {
-                        el.classList.add('animated', 'fadeInUp');
-                    }, ctr * 200);
+                        setTimeout(function() {
+                            box.style.display = "none";
+                        }, 500)
+                    }    
                 });
-            }, 200);
-        });
 
-        window.addEventListener('resize', function() {
-            // remove animation classes
-            animateEl.forEach(function(item) {
-                let el = item;
-                el.classList.remove('animate-this', 'animated', 'fadeInUp');
-            });
-        });
+            })
 
-    }; // end ssBricksAnimate
+        }; // end ssAlertBoxes
 
 
-   /* slick slider
-    * ------------------------------------------------------ */
-    const ssSlickSlider = function() {
+    /* Mobile Menu
+        * ---------------------------------------------------- */ 
+        const ssMobileMenu = function() {
 
-        function ssRunFeaturedSlider() {
-
-            const $fSlider = $('.featured-post-slider').slick({
-                arrows: false,
-                dots: false,
-                speed: 1000,
-                fade: true,
-                cssEase: 'linear',
-                slidesToShow: 1,
-                centerMode: true
-            });
-
-            $('.featured-post-nav__prev').on('click', function() {
-                $fSlider.slick('slickPrev');
-            });
-
-            $('.featured-post-nav__next').on('click', function() {
-                $fSlider.slick('slickNext');
-            });
-        
-        } // end ssRunFeaturedSlider
-
-        function ssRunGallerySlider() {
-
-            const $gallery = $('.slider__slides').slick({
-                arrows: false,
-                dots: true,
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                adaptiveHeight: true,
-                pauseOnFocus: false,
-                fade: true,
-                cssEase: 'linear'
-            });
+            const $navWrap = $('.s-header__nav-wrap');
+            const $closeNavWrap = $navWrap.find('.s-header__overlay-close');
+            const $menuToggle = $('.s-header__toggle-menu');
+            const $siteBody = $('body');
+            const $simonCloseOnAnyMenuItem = $navWrap.find('.s-header__nav');
             
-            $('.slider__slide').on('click', function() {
-                $gallery.slick('slickGoTo', parseInt($gallery.slick('slickCurrentSlide')) + 1);
+            $menuToggle.on('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                $siteBody.addClass('nav-wrap-is-visible');
             });
+
+            $closeNavWrap.on('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
             
-        } // end ssRunGallerySlider
-
-        ssRunFeaturedSlider();
-        ssRunGallerySlider();
-
-    }; // end ssSlickSlider
-
-
-   /* Smooth Scrolling
-    * ------------------------------------------------------ */
-    const ssSmoothScroll = function() {
-
-        $('.smoothscroll').on('click', function (e) {
-            let target  = this.hash,
-                $target = $(target);
-        
-            e.preventDefault();
-            e.stopPropagation();
-
-            $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-            }, cfg.scrollDuration, 'swing').promise().done(function () {
-
-            window.location.hash = target;
+                if($siteBody.hasClass('nav-wrap-is-visible')) {
+                    $siteBody.removeClass('nav-wrap-is-visible');
+                }
             });
-        });
 
-    }; // endSmoothScroll
+            // open (or close) submenu items in mobile view menu. 
+            // close all the other open submenu items.
+            $('.s-header__nav .has-children').children('a').on('click', function (e) {
+                e.preventDefault();
+
+                if ($(".close-mobile-menu").is(":visible") == true) {
+
+                    $(this).toggleClass('sub-menu-is-open')
+                        .next('ul')
+                        .slideToggle(200)
+                        .end()
+                        .parent('.has-children')
+                        .siblings('.has-children')
+                        .children('a')
+                        .removeClass('sub-menu-is-open')
+                        .next('ul')
+                        .slideUp(200);
+                }
+            });
+
+            // gridsome doesn't navigate with a page refresh, so we need to manually remove the menu overlay
+            $simonCloseOnAnyMenuItem.on('click', function(e) {
+                e.stopPropagation();
+            
+                if($siteBody.hasClass('nav-wrap-is-visible')) {
+                    $siteBody.removeClass('nav-wrap-is-visible');
+                }
+            });
+
+        }; // end ssMobileMenu
 
 
-    
-   /* back to top
-    * ------------------------------------------------------ */
-    const ssBackToTop = function() {
+    /* search
+        * ------------------------------------------------------ */
+        const ssSearch = function() {
 
-        const pxShow = 800;
-        const goTopButton = document.querySelector(".ss-go-top");
+            const searchWrap = document.querySelector('.s-header__search');
+            const searchTrigger = document.querySelector('.s-header__search-trigger');
 
-        if (!goTopButton) return;
+            if (!(searchWrap && searchTrigger)) return;
 
-        // Show or hide the button
-        if (window.scrollY >= pxShow) goTopButton.classList.add("link-is-visible");
+            const searchField = searchWrap.querySelector('.s-header__search-field');
+            const closeSearch = searchWrap.querySelector('.s-header__overlay-close');
+            const siteBody = document.querySelector('body');
 
-        window.addEventListener('scroll', function() {
-            if (window.scrollY >= pxShow) {
-                if(!goTopButton.classList.contains('link-is-visible')) goTopButton.classList.add("link-is-visible")
-            } else {
-                goTopButton.classList.remove("link-is-visible")
-            }
-        });
+            searchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
 
-    }; // end ssBackToTop
+                siteBody.classList.add('search-is-visible');
+                setTimeout(function(){
+                    searchWrap.querySelector('.s-header__search-field').focus();
+                }, 100);
+            });
 
-    console.log('simon2');
+            closeSearch.addEventListener('click', function(e) {
+                e.stopPropagation();
 
-   /* Initialize
-    * ------------------------------------------------------ */
-    (function ssInit() {
-    console.log('simon3');
+                if(siteBody.classList.contains('search-is-visible')) {
+                    siteBody.classList.remove('search-is-visible');
+                    setTimeout(function(){
+                        searchWrap.querySelector('.s-header__search-field').blur();
+                    }, 100);
+                }
+            });
 
-        // from ssPreloader():
-        document.querySelector('html').classList.add('ss-loaded');
+            searchWrap.addEventListener('click', function(e) {
+                if( !(e.target.matches('.s-header__search-field')) ) {
+                    closeSearch.dispatchEvent(new Event('click'));
+                }
+            });
 
-        ssAlertBoxes();
-        ssSearch();
-        ssMobileMenu();
-        ssMasonry();
-        //ssBricksAnimate();
-        ssSlickSlider();
-        ssSmoothScroll();
-        ssBackToTop();
-    console.log('simon4');
+            searchField.addEventListener('click', function(e) {
+                e.stopPropagation();
+            })
 
-    })();
+            searchField.setAttribute('placeholder', 'Type Keywords');
+            searchField.setAttribute('autocomplete', 'off');
 
-})(jQuery);
+        }; // end ssSearch
 
-    console.log('simon5');
 
+    /* masonry
+        * ------------------------------------------------------ */
+        const ssMasonry = function() {
+            const containerBricks = document.querySelector('.bricks-wrapper');
+            if (!containerBricks) return;
+
+            imagesLoaded(containerBricks, function() {
+
+                const msnry = new Masonry(containerBricks, {
+                    itemSelector: '.entry',
+                    columnWidth: '.grid-sizer',
+                    percentPosition: true,
+                    resize: true
+                });
+
+            });
+        }; // end ssMasonry
+
+
+    /* animate bricks
+        * ------------------------------------------------------ */
+        const ssBricksAnimate = function() {
+            const animateEl = document.querySelectorAll('.animate-this');
+            if (!animateEl) return;
+
+            window.addEventListener('load', function() {
+
+                setTimeout(function() {
+                    animateEl.forEach(function(item, ctr) {
+                        let el = item;
+                            
+                        setTimeout(function() {
+                            el.classList.add('animated', 'fadeInUp');
+                        }, ctr * 200);
+                    });
+                }, 200);
+            });
+
+            window.addEventListener('resize', function() {
+                // remove animation classes
+                animateEl.forEach(function(item) {
+                    let el = item;
+                    el.classList.remove('animate-this', 'animated', 'fadeInUp');
+                });
+            });
+
+        }; // end ssBricksAnimate
+
+
+    /* slick slider
+        * ------------------------------------------------------ */
+        const ssSlickSlider = function() {
+
+            function ssRunFeaturedSlider() {
+
+                const $fSlider = $('.featured-post-slider').slick({
+                    arrows: false,
+                    dots: false,
+                    speed: 1000,
+                    fade: true,
+                    cssEase: 'linear',
+                    slidesToShow: 1,
+                    centerMode: true
+                });
+
+                $('.featured-post-nav__prev').on('click', function() {
+                    $fSlider.slick('slickPrev');
+                });
+
+                $('.featured-post-nav__next').on('click', function() {
+                    $fSlider.slick('slickNext');
+                });
+            
+            } // end ssRunFeaturedSlider
+
+            function ssRunGallerySlider() {
+
+                const $gallery = $('.slider__slides').slick({
+                    arrows: false,
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    pauseOnFocus: false,
+                    fade: true,
+                    cssEase: 'linear'
+                });
+                
+                $('.slider__slide').on('click', function() {
+                    $gallery.slick('slickGoTo', parseInt($gallery.slick('slickCurrentSlide')) + 1);
+                });
+                
+            } // end ssRunGallerySlider
+
+            ssRunFeaturedSlider();
+            ssRunGallerySlider();
+
+        }; // end ssSlickSlider
+
+
+    /* Smooth Scrolling
+        * ------------------------------------------------------ */
+        const ssSmoothScroll = function() {
+
+            $('.smoothscroll').on('click', function (e) {
+                let target  = this.hash,
+                    $target = $(target);
+            
+                e.preventDefault();
+                e.stopPropagation();
+
+                $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+                }, cfg.scrollDuration, 'swing').promise().done(function () {
+
+                window.location.hash = target;
+                });
+            });
+
+        }; // endSmoothScroll
+
+
+        
+    /* back to top
+        * ------------------------------------------------------ */
+        const ssBackToTop = function() {
+
+            const pxShow = 800;
+            const goTopButton = document.querySelector(".ss-go-top");
+
+            if (!goTopButton) return;
+
+            // Show or hide the button
+            if (window.scrollY >= pxShow) goTopButton.classList.add("link-is-visible");
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY >= pxShow) {
+                    if(!goTopButton.classList.contains('link-is-visible')) goTopButton.classList.add("link-is-visible")
+                } else {
+                    goTopButton.classList.remove("link-is-visible")
+                }
+            });
+
+        }; // end ssBackToTop
+
+    /* Initialize
+        * ------------------------------------------------------ */
+        (function ssInit() {
+            // from ssPreloader():
+            document.querySelector('html').classList.add('ss-loaded');
+
+            ssAlertBoxes();
+            ssSearch();
+            ssMobileMenu();
+            ssMasonry();
+            //ssBricksAnimate();
+            ssSlickSlider();
+            ssSmoothScroll();
+            ssBackToTop();
+        })();
+
+    })(jQuery);
     }
   }
 </script>
