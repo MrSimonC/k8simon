@@ -63,7 +63,7 @@
                     <h5>About K8Simon</h5>
 
                     <p>
-                    All about kubernetes. This site uses the amazing Azure Static Web apps (free hosting, free SSL), an adapted HTML5 theme and Microsoft's Blazor Web Assembly. Pull up a chair, hang out a while.
+                    All about kubernetes. This site uses the amazing Azure Static Web apps (free hosting, free SSL), an adapted HTML5 theme and Gridsome. Pull up a chair, hang out a while.
                     </p>
 
                 </div> <!-- end s-footer__info -->
