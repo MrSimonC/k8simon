@@ -88,11 +88,8 @@
                     <h5>Social</h5>
 
                     <ul>
-                        <li><a href="#0">Twitter</a></li>
-                        <li><a href="#0">Facebook</a></li>
-                        <li><a href="#0">Dribbble</a></li>
-                        <li><a href="#0">Pinterest</a></li>
-                        <li><a href="#0">Instagram</a></li>
+                        <li><a href="https://twitter.com/simoncveracity">Twitter</a></li>
+                        <li><a href="http://instagram.com/simoncveracity">Instagram</i></a></li>
                     </ul>
 
                 </div> <!-- end s-footer__social links --> 
