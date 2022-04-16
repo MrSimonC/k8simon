@@ -82,6 +82,12 @@
                     </div> <!-- end entry content -->
                 </div> <!-- end entry, featured grid -->
  
+                <ArticleCard
+                image='images/thumbs/masonry/chairs.jpg'
+                title='A lesson in AKS and Managed Id' 
+                description='In my first blog, I learned about what Azure Kubernetes Service does when it creates a cluster. Also, I learned about Managed Identity and how to use it in AKS.'
+                link='/First-lesson/' />
+
                 <article class="brick entry format-standard animate-this">
     
                     <div class="entry__thumb">
@@ -549,9 +555,14 @@
 </template>
 
 <script>
+import ArticleCard from '~/components/ArticleCard.vue'
+
 export default {
   metaInfo: {
     title: 'Welcome to k8simon.com'
+  },
+  components: {
+    ArticleCard
   }
 }
 </script>
