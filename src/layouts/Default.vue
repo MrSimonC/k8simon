@@ -86,7 +86,6 @@
                 <div class="column large-2 medium-3 tab-6 s-footer__social-links">
 
                     <h5>Social</h5>
-
                     <ul>
                         <li><a href="https://twitter.com/simoncveracity">Twitter</a></li>
                         <li><a href="http://instagram.com/simoncveracity">Instagram</i></a></li>
