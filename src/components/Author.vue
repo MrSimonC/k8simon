@@ -3,7 +3,7 @@
     <g-image src="~/../static/images/avatars/user-01.png" alt="picture of simon crouch" />
 
     <div class="about">
-        <h5><a href="#">Simon Crouch</a></h5>
+        <h5>Simon Crouch</h5>
     
         <p>Simon is a senior developer at a large UK company. Interested in cloud native, .Net, Infrastructure as code and Kubernetes. You'll usually find him drinking coffee and tinkering with one of his 10 raspberry pis.</p>
         </p>
