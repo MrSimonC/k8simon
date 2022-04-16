@@ -22,11 +22,11 @@
 
                                     <div class="f-slide__content">
                                         <ul class="f-slide__meta">
-                                            <li>September 06, 2020</li> 
-                                            <li><a href="#" >Naruto Uzumaki</a></li>
+                                            <li>April 14, 2022</li> 
+                                            <li><a href="#" >First lesson with AKS</a></li>
                                         </ul>	
 
-                                        <h1 class="f-slide__title"><a href="single-standard.html" title="">A Practical Guide to a Minimalist Lifestyle.</a></h1> 
+                                        <h1 class="f-slide__title"><g-link to='/First-lesson/'>When you first start an Azure Kubernetes Cluster here's your first lesson on Managed Id</g-link></h1> 
                                     </div>
 
                                 </div> <!-- f-slide -->
