@@ -1,335 +1,88 @@
 <template>
     <Layout>
-<section class="s-content s-content--single">
-        <div class="row">
-            <div class="column large-12">
+        <section class="s-content s-content--single">
+            <div class="row">
+                <div class="column large-12">
 
-                <article class="s-post entry format-standard">
+                    <article class="s-post entry format-standard">
 
-                    <div class="s-content__media">
-                        <div class="s-content__post-thumb">
-                            <g-image src="~/../static/images/thumbs/featured/featured-1.jpg" />
+                        <div class="s-content__media">
+                            <div class="s-content__post-thumb">
+                                <g-image src="~/../static/images/thumbs/masonry/chairs.jpg" alt="room2, southampton" />
+                                <small>room2, Southampton</small>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="s-content__primary">
+                        <div class="s-content__primary">
 
-                        <h2 class="s-content__title s-content__title--post">AKS Managed Id</h2>
+                            <h2 class="s-content__title s-content__title--post">AKS Managed Id</h2>
 
-                        <ul class="s-content__post-meta">
-                            <li class="date">April 14, 2022</li>
-                            <li class="cat"><a href="">AKS</a><a href="">Azure</a></li>
-                        </ul>
-
-                        <p class="lead">
-                        Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor 
-                        sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat 
-                        enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco 
-                        magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum 
-                        adipisicing aliqua ea nisi sint. Unde quod at minus quia velit ipsa ea qui. </p> 
-
-                        <p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
-                        </p>
-
-                        <p>
-                            <img src="images/sample-1050.jpg" 
-                                 srcset="images/sample-2100.jpg 2100w, 
-                                         images/sample-1050.jpg 1050w, 
-                                         images/sample-525.jpg 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="">
-                        </p>
-
-                        <p>Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.
-                        </p>
-
-                        <h2>Large Heading</h2>
-
-                        <p>Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus <a href="http://#">omnis voluptas assumenda est</a> id quod maxime placeat facere possimus, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et.</p>
-
-                        <blockquote>
-                            <p>
-                            For God so loved the world, that he gave his only Son, that whoever believes in 
-                            him should not perish but have eternal life. For God did not send his Son into 
-                            the world to condemn the world, but in order that the world might be 
-                            saved through him.
-                            </p>
-                            <cite>John 3:16-17 ESV</cite>
-                        </blockquote>
-
-                        <p>Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed..</p>
-
-                        <h3>Smaller Heading</h3>
-
-                        <p>Quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-                        <p>Quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-                        
-<pre><code class="language-css">
-    code {
-        font-size: 1.4rem;
-        margin: 0 .2rem;
-        padding: .2rem .6rem;
-        white-space: nowrap;
-        background: #F1F1F1;
-        border: 1px solid #E1E1E1;	
-        border-radius: 3px;
-    }
-</code></pre>
-                            
-                        <p>Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.</p>
-
-                        <ul>
-                            <li>Donec nulla non metus auctor fringilla.
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet.</li>
-                                    <li>Lorem ipsum dolor sit amet.</li>
-                                    <li>Lorem ipsum dolor sit amet.</li>
-                                </ul>
-                            </li>
-                            <li>Donec nulla non metus auctor fringilla.</li>
-                            <li>Donec nulla non metus auctor fringilla.</li>
-                        </ul>
-
-                        <p>Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed..</p>
-
-                        <p class="s-content__post-tags">
-                            <span>Tagged in :</span>
-                            <a href="#">orci</a><a href="#">lectus</a><a href="#">varius</a><a href="#">turpis</a>
-                        </p>
-
-                        <Author />
-
-                        <div class="s-content__pagenav group">
-                            <div class="prev-nav">
-                                <a href="#" rel="prev">
-                                    <span>Previous</span>
-                                    Tips on Minimalist Design 
-                                </a>
-                            </div>
-                             <div class="next-nav">
-                                 <a href="#" rel="next">
-                                     <span>Next</span>
-                                    Less Is More 
-                                 </a>
-                             </div>
-                         </div> <!-- end s-content__pagenav -->
-
-                    </div> <!-- end s-content__primary -->
-                </article>
-
-            </div> <!-- end column -->
-        </div> <!-- end row -->
-
-
-        <!-- comments
-        ================================================== -->
-        <div class="comments-wrap">
-
-            <div id="comments" class="row">
-                <div class="column">
-
-                    <h3>5 Comments</h3>
-
-                    <!-- START commentlist -->
-                    <ol class="commentlist">
-
-                        <li class="depth-1 comment">
-
-                            <div class="comment__avatar">
-                                <img class="avatar" src="images/avatars/user-01.jpg" alt="" width="50" height="50">
-                            </div>
-
-                            <div class="comment__content">
-
-                                <div class="comment__info">
-                                    <div class="comment__author">Itachi Uchiha</div>
-
-                                    <div class="comment__meta">
-                                        <div class="comment__time">Sept 05, 2020</div>
-                                        <div class="comment__reply">
-                                            <a class="comment-reply-link" href="#0">Reply</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="comment__text">
-                                <p>Adhuc quaerendum est ne, vis ut harum tantas noluisse, id suas iisque mei. Nec te inani ponderum vulputate,
-                                facilisi expetenda has et. Iudico dictas scriptorem an vim, ei alia mentitum est, ne has voluptua praesent.</p>
-                                </div>
-
-                            </div>
-
-                        </li> <!-- end comment level 1 -->
-
-                        <li class="thread-alt depth-1 comment">
-
-                            <div class="comment__avatar">
-                                <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
-                            </div>
-
-                            <div class="comment__content">
-
-                                <div class="comment__info">
-                                    <div class="comment__author">John Doe</div>
-
-                                    <div class="comment__meta">
-                                        <div class="comment__time">Sept 05, 2020</div>
-                                        <div class="comment__reply">
-                                            <a class="comment-reply-link" href="#0">Reply</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="comment__text">
-                                <p>Sumo euismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei. Esse euismod
-                                urbanitas ut sed, et duo scaevola pericula splendide. Primis veritus contentiones nec ad, nec et
-                                tantas semper delicatissimi.</p>
-                                </div>
-
-                            </div>
-
-                            <ul class="children">
-
-                                <li class="depth-2 comment">
-
-                                    <div class="comment__avatar">
-                                        <img class="avatar" src="images/avatars/user-03.jpg" alt="" width="50" height="50">
-                                    </div>
-
-                                    <div class="comment__content">
-
-                                        <div class="comment__info">
-                                            <div class="comment__author">Kakashi Hatake</div>
-
-                                            <div class="comment__meta">
-                                                <div class="comment__time">Sept, 05 2020</div>
-                                                <div class="comment__reply">
-                                                    <a class="comment-reply-link" href="#0">Reply</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="comment__text">
-                                            <p>Duis sed odio sit amet nibh vulputate
-                                            cursus a sit amet mauris. Morbi accumsan ipsum velit. Duis sed odio sit amet nibh vulputate
-                                            cursus a sit amet mauris</p>
-                                        </div>
-
-                                    </div>
-
-                                    <ul class="children">
-
-                                        <li class="depth-3 comment">
-
-                                            <div class="comment__avatar">
-                                                <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
-                                            </div>
-
-                                            <div class="comment__content">
-
-                                                <div class="comment__info">
-                                                    <div class="comment__author">John Doe</div>
-
-                                                    <div class="comment__meta">
-                                                        <div class="comment__time">Sept 04, 2020</div>
-                                                        <div class="comment__reply">
-                                                            <a class="comment-reply-link" href="#0">Reply</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="comment__text">
-                                                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                                etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
-                                                </div>
-
-                                            </div>
-
-                                        </li>
-
-                                    </ul>
-
-                                </li>
-
+                            <ul class="s-content__post-meta">
+                                <li class="date">April 16, 2022</li>
+                                <!-- <li class="cat"><a href="">AKS</a><a href="">Azure</a></li> -->
                             </ul>
 
-                        </li> <!-- end comment level 1 -->
+                            <p class="lead">
+                                Welcome to my first blog entry - but also the first lesson I learned about running kubernetes on Azure Kubernetes Service (AKS).</p> 
 
-                        <li class="depth-1 comment">
+                            <p class="drop-cap">The absolute first thing you should know is that when you create an AKS, Microsoft will set up a few things they need to help look after your cluster. So as not to confuse you, Microsoft create an additional resource group alongside your own (I never even knew they did that, so initially I found it confusing. The irony). This is called “MC_yourResourceGroupName_yourClusterName_yourChosenLocation”.  This is the default notation, so be aware someone you work with may have renamed it / <a href="https://docs.microsoft.com/en-us/azure/aks/faq#can-i-provide-my-own-name-for-the-aks-node-resource-group">created it with a different name.</a>
+                            </p>
 
-                            <div class="comment__avatar">
-                                <img class="avatar" src="images/avatars/user-02.jpg" alt="" width="50" height="50">
-                            </div>
+                            <blockquote>
+                                <p>
+                                    “The second resource group, known as the node resource group, contains all of the infrastructure resources associated with the cluster.”
+                                </p>
+                                <cite><a href='https://docs.microsoft.com/en-us/azure/aks/faq#why-are-two-resource-groups-created-with-aks'>Microsoft Documentation</a></cite>
+                            </blockquote>
 
-                            <div class="comment__content">
+                            <p>The situation I found myself in was that I had to work on an AKS which someone had already made. When creating the cluster, they had selected (unbeknownst to me) “managed system identity” authentication.
+                            </p>
 
-                                <div class="comment__info">
-                                    <div class="comment__author">Shikamaru Nara</div>
+                            <p>What this does is created a new system managed identity called “yourAKSClusterName-agentpool”, and puts it in the “MC_…” node resource group we talked about above.</p>
 
-                                    <div class="comment__meta">
-                                        <div class="comment__time">Sept 03, 2020</div>
-                                        <div class="comment__reply">
-                                            <a class="comment-reply-link" href="#0">Reply</a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <p>This managed identity is what you should be adding (on a basic level) to your other azure resources (key vaults, container registries etc) if you want things in your cluster to be able to access them.</p>
 
-                                <div class="comment__text">
-                                <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
-                                </div>
+                            <p>At this point, most newbies can stop reading, as your basic kubernetes cluster can now access other azure resources if you add that managed id to those resources.</p>
 
-                            </div>
+                            <p>
+                                <g-image src="~/../static/images/thumbs/masonry/chairs-drink.jpg" alt="room2, southampton" />
+                            </p>
 
-                        </li>  <!-- end comment level 1 -->
+                            <h3>User Assigned Managed Identities</h3>
 
-                    </ol>
-                    <!-- END commentlist -->
+                            <p>When I started work on an existing AKS cluster, I started adding user assigned managed identities to my azure resources (key vaults etc), but couldn’t work out how to tie the user signed identities back to the (calling) cluster. There was just no connection between them. That yourAKSClusterName-agentpool was the secret sauce.</p>
 
-                </div> <!-- end col-full -->
-            </div> <!-- end comments -->
+                            <blockquote>
+                                <p>
+                                    “This auto-created “...-agentpool” managed identity represents your whole kubernetes cluster.”
+                                </p>
+                                <!-- <cite><a href='https://docs.microsoft.com/en-us/azure/aks/faq#why-are-two-resource-groups-created-with-aks'>Microsoft Documentation</a></cite> -->
+                            </blockquote>
 
+                            <p>However, what if you want a bit more granular control? What if each service (specifically pod) should really have their own identity?</p>
 
-            <div class="row comment-respond">
+                            <p>Well, in terms of Azure managed identity with regard to pod specific identities, there is one main de facto library of time writing:</p>
 
-                <!-- START respond -->
-                <div id="respond" class="column">
+                            <p><a href="https://github.com/Azure/aad-pod-identity">https://github.com/Azure/aad-pod-identity</a></p>
 
-                    <h3>
-                    Add Comment 
-                    <span>Your email address will not be published.</span>
-                    </h3>
+                            <p>This is an open source project, but with the backing of Microsoft. You can read about how to get started in the link.</p>
+                            
+                            <p>The future direction of doing pod based identity will be “workflow identities”. Think aad pod identity v2. At time of writing (April 2022), managed identities are not currently supported in the new “workflow identity” - as it’s just too early days, but are for the existing aad-pod-identity … 
+                            </p>
 
-                    <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off">
-                        <fieldset>
+                            <p>Not having managed identity support is a dealbreaker for us on our project using Azure - so we’ll stick to the aad pod identity.</p>
 
-                            <div class="form-field">
-                                <input name="cName" id="cName" class="h-full-width" placeholder="Your Name" value="" type="text">
-                            </div>
+                            <p>My thanks to the Finland Azure user group Who did talk on the subject and is definitely worth a watch: <a href="https://youtu.be/c4C9FnI4ZPw">https://youtu.be/c4C9FnI4ZPw</a></p>
 
-                            <div class="form-field">
-                                <input name="cEmail" id="cEmail" class="h-full-width" placeholder="Your Email" value="" type="text">
-                            </div>
-
-                            <div class="form-field">
-                                <input name="cWebsite" id="cWebsite" class="h-full-width" placeholder="Website" value="" type="text">
-                            </div>
-
-                            <div class="message form-field">
-                                <textarea name="cMessage" id="cMessage" class="h-full-width" placeholder="Your Message"></textarea>
-                            </div>
-
-                            <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large h-full-width" value="Add Comment" type="submit">
-
-                        </fieldset>
-                    </form> <!-- end form -->
-
+                            <p>I hope this provides a little illumination for those of you getting started… It definitely caught us out. Hopefully reading this I’ve saved somebody else the hard lesson we had to learn!</p>
+                        </div>
+                    </article>
                 </div>
-                <!-- END respond-->
+                <Author />
+            </div>
 
-            </div> <!-- end comment-respond -->
 
-        </div> <!-- end comments-wrap -->
-
-    </section>
+        </section>
     </Layout>
 </template>
 
