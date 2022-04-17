@@ -15,6 +15,14 @@
 
                         <div class="featured-post-slider">
                             
+                            <FeaturedPostCard
+                                image="background-image:url('images/thumbs/masonry/chairs.jpg');"
+                                date="16 April 2022"
+                                title="AKS Managed Id"
+                                description="A lesson in AKS Managed Identity"
+                                link="/first-lesson/"
+                            />
+
                             <div class="featured-post-slide">
                                 <div class="f-slide">
                                     <div class="f-slide__background" style="background-image:url('images/thumbs/featured/featured-1.jpg');"></div>
@@ -268,8 +276,7 @@
                                          />
                                 </div>
                                 <div class="slider__slide">
-                                    <g-image src="~/../static/images/thumbs/masonry/gallery/slide-3-600.jpg" 
-                                         / >
+                                    <g-image src="~/../static/images/thumbs/masonry/gallery/slide-3-600.jpg" />
                                 </div>
                             </div>    
                     </div> <!-- end entry__thumb -->
@@ -557,13 +564,15 @@
 
 <script>
 import ArticleCard from '~/components/ArticleCard.vue'
+import FeaturedPostCard from '~/components/FeaturedPostCard.vue'
 
 export default {
   metaInfo: {
     title: 'Welcome to k8simon.com'
   },
   components: {
-    ArticleCard
+    ArticleCard,
+    FeaturedPostCard
   }
 }
 </script>
