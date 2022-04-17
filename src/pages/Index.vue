@@ -26,7 +26,7 @@
                                             <li><a href="#" >First lesson with AKS</a></li>
                                         </ul>	
 
-                                        <h1 class="f-slide__title"><g-link to='/First-lesson/'>When you first start an Azure Kubernetes Cluster here's your first lesson on Managed Id</g-link></h1> 
+                                        <h1 class="f-slide__title"><g-link to='/first-lesson/'>When you first start an Azure Kubernetes Cluster here's your first lesson on Managed Id</g-link></h1> 
                                     </div>
 
                                 </div> <!-- f-slide -->
@@ -83,10 +83,11 @@
                 </div> <!-- end entry, featured grid -->
  
                 <ArticleCard
-                image='images/thumbs/masonry/chairs.jpg'
-                title='A lesson in AKS and Managed Id' 
-                description='In my first blog, I learned about what Azure Kubernetes Service does when it creates a cluster. Also, I learned about Managed Identity and how to use it in AKS.'
-                link='/First-lesson/' />
+                    image='images/thumbs/masonry/chairs.jpg'
+                    title='A lesson in AKS and Managed Id' 
+                    description='In my first blog, I learned about what Azure Kubernetes Service does when it creates a cluster. Also, I learned about Managed Identity and how to use it in AKS.'
+                    link='/first-lesson/'
+                />
 
                 <article class="brick entry format-standard animate-this">
     

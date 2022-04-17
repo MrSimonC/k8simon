@@ -80,18 +80,16 @@
                 </div>
                 <Author />
             </div>
-
-
         </section>
     </Layout>
 </template>
 
 <script>
-    import Author from '~/components/Author.vue'
+import Author from '~/components/Author.vue'
 
-    export default {
-        components: {
-        Author
-        }
+export default {
+    components: {
+    Author
     }
+}
 </script>
