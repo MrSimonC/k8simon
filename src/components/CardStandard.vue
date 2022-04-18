@@ -32,7 +32,7 @@
 
 <script>
 export default {
-    name: 'ArticleCard',
+    name: 'CardStandard',
     props: ['image', 'title', 'description', 'link']
 }
 </script>
