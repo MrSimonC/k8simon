@@ -52,6 +52,13 @@
                     link='/first-lesson/'
                 />
 
+                <ArticleCard
+                    image='images/thumbs/featured/video-documentary.jpg'
+                    title='Kubernetes Documentary' 
+                    description='Watch how kubernetes was formed in the early days, featuring interviews with developers and key players.'
+                    link='/video-documentary/'
+                />
+
                 <article class="brick entry format-standard animate-this">
     
                     <div class="entry__thumb">
