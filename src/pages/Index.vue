@@ -24,7 +24,7 @@
                             />
 
                             <FeaturedPostCard
-                                image="background-image:url('images/thumbs/masonry/chairs.jpg');"
+                                image="background-image:url('images/thumbs/featured/chairs.jpg');"
                                 date="16 April 2022"
                                 author="Simon Crouch"
                                 title="A Lesson in AKS Managed Identity"
