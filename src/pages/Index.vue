@@ -112,7 +112,7 @@ import FeaturedPostCard from '~/components/FeaturedPostCard.vue'
 
 export default {
   metaInfo: {
-    title: 'Welcome to k8simon.com'
+    title: 'Learn about kubernetes'
   },
   components: {
     CardStandard,
