@@ -46,7 +46,7 @@
                 </div> <!-- end entry, featured grid -->
  
                 <CardStandard
-                    image='images/thumbs/masonry/chairs.jpg'
+                    image='images/thumbs/featured/chairs.jpg'
                     title='A lesson in AKS and Managed Id' 
                     description='In my first blog, I learned about what Azure Kubernetes Service does when it creates a cluster. Also, I learned about Managed Identity and how to use it in AKS.'
                     link='/first-lesson/'
