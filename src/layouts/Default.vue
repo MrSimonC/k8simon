@@ -58,7 +58,7 @@
 
             <div class="row">
 
-                <div class="column large-4 medium-6 tab-12 s-footer__info">
+                <div class="column large-5 medium-6 tab-12 s-footer__info">
 
                     <h5>About K8Simon</h5>
 
@@ -68,7 +68,7 @@
 
                 </div> <!-- end s-footer__info -->
 
-                <div class="column large-2 medium-3 tab-6 s-footer__site-links">
+                <div class="column large-3 medium-3 tab-6 s-footer__site-links">
 
                     <h5>Site Links</h5>
 
@@ -83,7 +83,7 @@
 
                 </div> <!-- end s-footer__site-links -->  
 
-                <div class="column large-2 medium-3 tab-6 s-footer__social-links">
+                <div class="column large-3 medium-3 tab-6 s-footer__social-links">
 
                     <h5>Social</h5>
                     <ul>
