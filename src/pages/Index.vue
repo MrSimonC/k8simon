@@ -16,65 +16,20 @@
                         <div class="featured-post-slider">
                             
                             <FeaturedPostCard
-                                image="background-image:url('images/thumbs/masonry/chairs.jpg');"
-                                date="16 April 2022"
-                                title="AKS Managed Id"
-                                description="A lesson in AKS Managed Identity"
-                                link="/first-lesson/"
+                                image="background-image:url('images/thumbs/featured/video-intro2.jpg');"
+                                date="18 April 2022"
+                                author="Simon Crouch"
+                                title="Introduction to Kubernetes Video"
+                                link="/video-intro/"
                             />
 
-                            <div class="featured-post-slide">
-                                <div class="f-slide">
-                                    <div class="f-slide__background" style="background-image:url('images/thumbs/featured/featured-1.jpg');"></div>
-                                    <div class="f-slide__overlay"></div>
-
-                                    <div class="f-slide__content">
-                                        <ul class="f-slide__meta">
-                                            <li>April 14, 2022</li> 
-                                            <li><a href="#" >First lesson with AKS</a></li>
-                                        </ul>	
-
-                                        <h1 class="f-slide__title"><g-link to='/first-lesson/'>When you first start an Azure Kubernetes Cluster here's your first lesson on Managed Id</g-link></h1> 
-                                    </div>
-
-                                </div> <!-- f-slide -->
-                            </div> <!-- featured-post-slide -->
-
-                            <div class="featured-post-slide">
-                                <div class="f-slide">
-                                    
-                                    <div class="f-slide__background" style="background-image:url('images/thumbs/featured/featured-2.jpg');"></div>
-                                    <div class="f-slide__overlay"></div>
-
-                                    <div class="f-slide__content">
-                                        <ul class="f-slide__meta">
-                                            <li>September 06, 2020</li> 
-                                            <li><a href="#" >Sakura Haruno</a></li>
-                                        </ul>
-
-                                        <h1 class="f-slide__title"><a href="single-standard.html" title="">Enhancing Your Designs with Negative Space</a></h1> 
-                                    </div>
-
-                                </div> <!-- f-slide -->
-                            </div> <!-- featured-post-slide -->
-
-                            <div class="featured-post-slide">
-                                <div class="f-slide">
-                                    
-                                    <div class="f-slide__background" style="background-image:url('images/thumbs/featured/featured-3.jpg');"></div>
-                                    <div class="f-slide__overlay"></div>
-
-                                    <div class="f-slide__content">
-                                        <ul class="f-slide__meta">
-                                            <li>September 05, 2020</li> 
-                                            <li><a href="#" >Shikamaru Nara</a></li>
-                                        </ul>
-
-                                        <h1 class="f-slide__title"><a href="single-standard.html" title="">Music Album Cover Designs for Inspiration</a></h1> 
-                                    </div>
-
-                                </div> <!-- f-slide -->
-                            </div> <!-- featured-post-slide -->
+                            <FeaturedPostCard
+                                image="background-image:url('images/thumbs/masonry/chairs.jpg');"
+                                date="16 April 2022"
+                                author="Simon Crouch"
+                                title="A Lesson in AKS Managed Identity"
+                                link="/first-lesson/"
+                            />
 
                         </div> <!-- end feature post slider -->
                         
