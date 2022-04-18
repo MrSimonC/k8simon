@@ -2,7 +2,7 @@
 <article class="brick entry format-standard animate-this">
     
         <div class="entry__thumb">
-            <g-link :to="link">
+            <g-link :to="link" class="thumb-link">
                 <g-image :src="image" :alt="title"></g-image>
             </g-link>
         </div> <!-- end entry__thumb -->
