@@ -127,7 +127,10 @@ import CardFeatured from '~/components/CardFeatured.vue'
 
 export default {
   metaInfo: {
-    title: 'Learn about kubernetes'
+    title: 'Learn about kubernetes',
+    meta: [
+        { author: 'simon crouch', description: 'Learn more about kubernetes, including videos, blog posts, and learnings from actual real-life development work in production.' }
+    ]
   },
   components: {
     CardStandard,
