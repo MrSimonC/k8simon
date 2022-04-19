@@ -16,7 +16,7 @@
                         <div class="featured-post-slider">
                             
                             <FeaturedPostCard
-                                image="background-image:url('images/thumbs/featured/video-intro2.jpg');"
+                                image="background-image:url('images/thumbs/featured/video-intro.jpg');"
                                 date="18 April 2022"
                                 author="Simon Crouch"
                                 title="Introduction to Kubernetes Video"
@@ -46,18 +46,22 @@
                 </div> <!-- end entry, featured grid -->
  
                 <CardStandard
-                    image='images/thumbs/featured/chairs.jpg'
                     title='A lesson in AKS and Managed Id' 
                     description='In my first blog, I learned about what Azure Kubernetes Service does when it creates a cluster. Also, I learned about Managed Identity and how to use it in AKS.'
-                    link='/first-lesson/'
-                />
+                    link='/first-lesson/'>
+                    <template slot="image">
+                        <g-image src='~/../static/images/thumbs/featured/chairs.jpg' alt='A lesson in AKS and Managed Id'></g-image>
+                    </template>
+                </CardStandard>
 
                 <CardVideo
-                    image='images/thumbs/featured/video-documentary.jpg'
                     title='Kubernetes Documentary' 
                     description='Watch how kubernetes was formed in the early days, featuring interviews with developers and key players.'
-                    link='/video-documentary/'
-                />
+                    link='/video-documentary/'>
+                    <template slot="image">
+                        <g-image src='~/../static/images/thumbs/featured/video-documentary.jpg' alt='Kubernetes Documentary'></g-image>
+                    </template>
+                    </CardVideo>
 
                 <CardQuote
                     quote='The inevitable trajectory of all software is death.'
@@ -66,11 +70,13 @@
                 />
 
                 <CardVideo
-                    image='images/thumbs/featured/video-intro2.jpg'
                     title='Introduction to Kubernetes' 
                     description='Featuring Brendan Burns, here is a great 40 minute video introduction to kubernetes.'
-                    link='/video-intro/'
-                />
+                    link='/video-intro/'>
+                    <template slot="image">
+                        <g-image src='~/../static/images/thumbs/featured/video-intro.jpg' alt='Introduction to Kubernetes'></g-image>
+                    </template>
+                </CardVideo>
             </div> <!-- end brick-wrapper --> 
  
         </div> <!-- end masonry -->

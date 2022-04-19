@@ -3,7 +3,7 @@
     
         <div class="entry__thumb">
             <g-link :to="link" class="thumb-link">
-                <g-image :src="image" :alt="title"></g-image>
+                <slot name="image" />
             </g-link>
         </div> <!-- end entry__thumb -->
 
@@ -33,6 +33,6 @@
 <script>
 export default {
     name: 'CardVideo',
-    props: ['image', 'title', 'description', 'link']
+    props: ['title', 'description', 'link']
 }
 </script>
