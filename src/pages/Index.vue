@@ -77,6 +77,15 @@
                         <g-image src='~/../static/images/thumbs/featured/video-intro.jpg' alt='Introduction to Kubernetes'></g-image>
                     </template>
                 </CardVideo>
+
+                <CardVideo
+                    title='Kubernetes Basics'
+                    description='Learn more concepts about kubernetes in these short 5-minute long videos from Microsoft in this YouTube playlist.'
+                    link='/video-basics-playlist/'>
+                    <template slot="image">
+                        <g-image src='~/../static/images/thumbs/masonry/video-basics-playlist.jpg' alt='Kubernetes Basics'></g-image>
+                    </template>
+                </CardVideo>
             </div> <!-- end brick-wrapper --> 
  
         </div> <!-- end masonry -->
