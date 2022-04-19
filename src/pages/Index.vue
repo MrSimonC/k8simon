@@ -15,7 +15,7 @@
 
                         <div class="featured-post-slider">
                             
-                            <FeaturedPostCard
+                            <CardFeatured
                                 image="background-image:url('images/thumbs/featured/video-intro.jpg');"
                                 date="18 April 2022"
                                 author="Simon Crouch"
@@ -23,7 +23,7 @@
                                 link="/video-intro/"
                             />
 
-                            <FeaturedPostCard
+                            <CardFeatured
                                 image="background-image:url('images/thumbs/featured/chairs.jpg');"
                                 date="16 April 2022"
                                 author="Simon Crouch"
@@ -114,7 +114,7 @@
 import CardStandard from '~/components/CardStandard.vue'
 import CardVideo from '~/components/CardVideo.vue'
 import CardQuote from '~/components/CardQuote.vue'
-import FeaturedPostCard from '~/components/FeaturedPostCard.vue'
+import CardFeatured from '~/components/CardFeatured.vue'
 
 export default {
   metaInfo: {
@@ -124,7 +124,7 @@ export default {
     CardStandard,
     CardVideo,
     CardQuote,
-    FeaturedPostCard
+    CardFeatured
   }
 }
 </script>

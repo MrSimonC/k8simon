@@ -19,7 +19,7 @@
 
 <script>
 export default {
-    name: 'FeaturedPostCard',
+    name: 'CardFeatured',
     props: ['image', 'date', 'author', 'title', 'link']
 }
 </script>
