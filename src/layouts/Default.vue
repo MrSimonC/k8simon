@@ -7,8 +7,7 @@
         <div class="row s-header__content">
 
             <div class="s-header__logo">
-                    <g-link to="/"><g-image src="~/../static/images/helm-logo.svg" alt="Homepage" /></g-link>
-                </a>
+                <g-link to="/"><g-image src="~/../static/images/helm-logo.svg" alt="Homepage" /></g-link>
             </div>
 
             <nav class="s-header__nav-wrap">
