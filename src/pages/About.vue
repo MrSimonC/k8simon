@@ -45,7 +45,6 @@
                                 <p>As any parent in my position (with young children) will know, time is of the essence always and having any kind of spare time is impossible. Anything goes – this entire page you are reading has been dictated while I was getting ready, then edited over breakfast, so if I can try and cram in anything in my busy life to get something up on the site, then it's gonna be worth trying!</p>
                             </div>
                         </div> <!-- end s-content__primary -->
-                        <p><small>Silhouette photo by <a href="https://unsplash.com/@benjaminsweet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben Sweet</a> on <a href="https://unsplash.com/s/photos/silhouette-man?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></small></p>
                     </div>
                 </section>
             </div> <!-- end column -->
