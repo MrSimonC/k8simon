@@ -6,5 +6,8 @@
 
 module.exports = {
   siteName: 'k8simon.com',
-  plugins: [],
+  siteUrl: 'https://www.k8simon.com',
+  plugins: [{
+    use: '@gridsome/plugin-sitemap'
+  }],
 }
